@@ -18,3 +18,13 @@ Youtube : https://youtu.be/LGdMVUoMG24
 10. สร้าง Project บน Vercel ผ่าน Dash Board
 11. เชื่อมโยงระหว่าง Vercel App และ Origin repository บน Github
 12. ทำการ Deploy Application ลงบน Vercel
+
+## การเตรียมค่า Config ก่อนการ Deploy
+
+ไฟล์ <โปรเจค>/wsgi.py
+
+```python
+application = get_wsgi_application()
+
+app = application
+```
