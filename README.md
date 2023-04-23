@@ -40,17 +40,49 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 ```json
 {
+  "version": 2,
   "builds": [
     {
       "src": "deploy_demo/wsgi.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "build_files.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles_build"
+      }
     }
   ],
   "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "deploy_demo/wsgi.py"
     }
   ]
 }
+```
+
+ทำการสร้างไฟล์ build_fiiles.sh
+
+```shell
+pip install -r requirements.txt
+python3.9 manage.py collectstatic --noinput --clear
+```
+
+settings.py
+
+```python
+.
+.
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [BASE_DIR / 'statics', ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
