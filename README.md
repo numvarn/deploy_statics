@@ -8,18 +8,18 @@ Youtube : https://youtu.be/19ik7cS8A5Q
 
 โดยมีขั้นตอนในการเตรียมการ
 
-1. 2:30 โคลน Project จาก Github remote repository
-2. 5:15 สร้าง repository ใหม่
-3. 6:18 กำหนดค่า git remote url
-4. 7:50 สร้าง virtual environment ของ python สำหรับโปรเจค
-5. 9:14 ติดตั้งแพคเก็จที่จำเป็นต้องใช้ในโปรเจคจากไฟล์ requirement.txt
-6. 10:30 การเพิ่มเทมเพลต และการจัดการ Static Files
-7. 19:25 การสร้าง Static Root
-8. 23:00 ตั้งค่าไฟล์ vercel.json
-9. 24:50 สร้างไฟล์ build_files.sh
-10. 27:00 พุช Source ไปที่ Origin repository บน Github
-11. 27:55 สร้างโปรเจคใหม่บน Vercel
-12. 29:00 คอมเมนต์ดาต้าเบสใน settings.py
+1. (2:30) โคลน Project จาก Github remote repository
+2. (5:15) สร้าง repository ใหม่
+3. (6:18) กำหนดค่า git remote url
+4. (7:50) สร้าง virtual environment ของ python สำหรับโปรเจค
+5. (9:14) ติดตั้งแพคเก็จที่จำเป็นต้องใช้ในโปรเจคจากไฟล์ requirement.txt
+6. (10:30) การเพิ่มเทมเพลต และการจัดการ Static Files
+7. (19:25) การสร้าง Static Root
+8. (23:00) ตั้งค่าไฟล์ vercel.json
+9. (24:50) สร้างไฟล์ build_files.sh
+10. (27:00) พุช Source ไปที่ Origin repository บน Github
+11. (27:55) สร้างโปรเจคใหม่บน Vercel
+12. (29:00) คอมเมนต์ดาต้าเบสใน settings.py
 
 ## การเตรียมค่า Config ก่อนการ Deploy
 
