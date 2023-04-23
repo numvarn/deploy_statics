@@ -2,21 +2,24 @@
 
 โดย ผู้ช่วยศาสตราจารย์พิศาล สุขขี
 
-Youtube : https://youtu.be/LGdMVUoMG24
+Youtube : https://youtu.be/19ik7cS8A5Q
 
 เนื้อหา : กระบวนการติดตั้ง Django Application และการจัดการ Static Files บน Vercel ผ่าน Github
 
 โดยมีขั้นตอนในการเตรียมการ
 
-1. โคลน Project จาก Github remote repository
-2. สร้าง virtual environment ของ python สำหรับโปรเจค
-3. ติดตั้งแพคเก็จที่จำเป็นต้องใช้ในโปรเจคจากไฟล์ requirement.txt
-4. ตั้งค่าไฟล์ vercel.json
-5. สร้าง Origin repository บน Github
-6. นำไฟล์ส่งไปเก็บบน Origin
-7. สร้าง Project บน Vercel ผ่าน Dash Board
-8. เชื่อมโยงระหว่าง Vercel App และ Origin repository บน Github
-9. ทำการ Deploy Application ลงบน Vercel
+1. 2:30 โคลน Project จาก Github remote repository
+2. 5:15 สร้าง repository ใหม่
+3. 6:18 กำหนดค่า git remote url
+4. 7:50 สร้าง virtual environment ของ python สำหรับโปรเจค
+5. 9:14 ติดตั้งแพคเก็จที่จำเป็นต้องใช้ในโปรเจคจากไฟล์ requirement.txt
+6. 10:30 การเพิ่มเทมเพลต และการจัดการ Static Files
+7. 19:25 การสร้าง Static Root
+8. 23:00 ตั้งค่าไฟล์ vercel.json
+9. 24:50 สร้างไฟล์ build_files.sh
+10. 27:00 พุช Source ไปที่ Origin repository บน Github
+11. 27:55 สร้างโปรเจคใหม่บน Vercel
+12. 29:00 คอมเมนต์ดาต้าเบสใน settings.py
 
 ## การเตรียมค่า Config ก่อนการ Deploy
 
