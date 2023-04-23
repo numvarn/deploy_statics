@@ -4,19 +4,18 @@
 
 Youtube : https://youtu.be/LGdMVUoMG24
 
-เนื้อหา : กระบวนการติดตั้ง Django บน Heroku ผ่าน Github โดยมีขั้นตอนในการเตรียมการ
+เนื้อหา : กระบวนการติดตั้ง Django Application บน Vercel ผ่าน Github และการเซ็ตอัป Static Files โดยมีขั้นตอนในการเตรียมการ
 
-1. สร้างโปรเจคด้วย django-admin
+1. โคลน Project จาก Github remote repository
 2. สร้าง virtual environment ของ python สำหรับโปรเจค
-3. สร้างไฟล์ requirement.txt และระบุแพคเก็จที่จำเป็นต้องใช้ในโปรเจค
-4. ติดตั้งแพคเก็จที่จำเป็น ผ่าน pip install -r requirement.txt
-5. สร้างไฟล์ vercel.json
-6. เตรียมไฟล์ .gitignore
-7. สร้าง Origin repository บน Github
-8. นำไฟล์ส่งไปเก็บบน Origin
-9. สร้าง Project บน Vercel ผ่าน Dash Board
-10. เชื่อมโยงระหว่าง Vercel App และ Origin repository บน Github
-11. ทำการ Deploy Application ลงบน Vercel
+3. ติดตั้งแพคเก็จที่จำเป็นต้องใช้ในโปรเจคจากไฟล์ requirement.txt
+4. สร้างไฟล์ vercel.json
+5. เตรียมไฟล์ .gitignore
+6. สร้าง Origin repository บน Github
+7. นำไฟล์ส่งไปเก็บบน Origin
+8. สร้าง Project บน Vercel ผ่าน Dash Board
+9. เชื่อมโยงระหว่าง Vercel App และ Origin repository บน Github
+10. ทำการ Deploy Application ลงบน Vercel
 
 ## การเตรียมค่า Config ก่อนการ Deploy
 
