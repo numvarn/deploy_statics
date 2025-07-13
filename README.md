@@ -73,21 +73,20 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 ทำการสร้างไฟล์ build_fiiles.sh
 
 ```shell
-pip install -r requirements.txt
-python3.9 manage.py collectstatic --noinput --clear
+python3.12 -m pip install -r requirements.txt
+python3.12 manage.py collectstatic --noinput --clear
 ```
 
 ทำการตั้งต่า Static
 settings.py
 
 ```python
-import os
-.
-.
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [BASE_DIR / 'statics', ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'statics')]
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles_build', 'static')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
